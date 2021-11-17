@@ -4,6 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>include/EndpointLibrarian.hpp</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -12,6 +13,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>src/EndpointLibrarian.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -27,16 +29,28 @@
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
-    <conf name="Debug" type="1">
+    <conf name="Debug" type="3">
       <toolsSet>
         <compilerSet>default</compilerSet>
         <dependencyChecking>true</dependencyChecking>
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>include</pElem>
+          </incDir>
+          <commandLine>--std=c++20 -Wextra</commandLine>
+        </ccTool>
+        <archiverTool>
+        </archiverTool>
       </compileType>
+      <item path="include/EndpointLibrarian.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/EndpointLibrarian.cpp" ex="false" tool="1" flavor2="0">
+      </item>
     </conf>
-    <conf name="Release" type="1">
+    <conf name="Release" type="3">
       <toolsSet>
         <compilerSet>default</compilerSet>
         <dependencyChecking>true</dependencyChecking>
@@ -47,7 +61,11 @@
           <developmentMode>5</developmentMode>
         </cTool>
         <ccTool>
-          <developmentMode>5</developmentMode>
+          <developmentMode>6</developmentMode>
+          <incDir>
+            <pElem>include</pElem>
+          </incDir>
+          <commandLine>--std=c++20 -Wextra</commandLine>
         </ccTool>
         <fortranCompilerTool>
           <developmentMode>5</developmentMode>
@@ -55,7 +73,13 @@
         <asmTool>
           <developmentMode>5</developmentMode>
         </asmTool>
+        <archiverTool>
+        </archiverTool>
       </compileType>
+      <item path="include/EndpointLibrarian.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/EndpointLibrarian.cpp" ex="false" tool="1" flavor2="0">
+      </item>
     </conf>
   </confs>
 </configurationDescriptor>
