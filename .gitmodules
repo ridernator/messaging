@@ -1,0 +1,3 @@
+[submodule "tools/messageGenerator"]
+	path = tools/messageGenerator
+	url = git@github.com:ridernator/messageGenerator.git
